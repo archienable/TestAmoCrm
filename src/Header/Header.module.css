@@ -1,0 +1,84 @@
+.headerContainer {
+    /*margin: 0 auto;*/
+    color: #E4E5EA;
+    margin: 46px 150px 0 150px;
+    /*width: 1140px;*/
+    box-sizing: border-box;
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    margin-right: 137px;
+    gap: 30px;
+    z-index: 2;
+}
+
+.contacts {
+    display: flex;
+}
+
+.logo {
+    margin-right: 52px;
+}
+
+.logoText {
+    font-family: 'Montserrat', sans-serif;
+    color: #969599;
+    width: 165px;
+    height: 24px;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.phone {
+    margin-right: 47px;
+}
+
+.telegram {
+    margin-right: 30px;
+}
+
+.viber {
+    margin-right: 30px;
+}
+
+@media (max-width: 360px) {
+    .headerContainer {
+        margin: 0 auto;
+        width: 100%;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0E1014;
+    }
+    .headerContent {
+        max-width: 288px;
+    }
+    .navigation {
+        gap: 16px;
+    }
+    .contacts {
+        display: none;
+    }
+    .navItem {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
+    .certificates {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+}

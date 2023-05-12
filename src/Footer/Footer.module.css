@@ -1,0 +1,152 @@
+.footerContainer {
+    margin: 89px 150px 0 150px;
+    display: flex;
+    gap: 98px;
+}
+
+a {
+    color: #E4E5EA;
+    text-decoration: none;
+}
+
+.blockFooter {
+    color: #656566;
+}
+
+.blockFooterTitle {
+    color: #656566;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.blockFooterContent {
+    margin-top: 20px;
+    display: flex;
+    gap: 52px;
+    color: #E4E5EA;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.blockFooterContentText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blockFooterContacts {
+    flex: 2;
+    text-align: right;
+}
+
+.blockFooterContentTextContacts {
+    flex: 2;
+    gap: 20px;
+}
+
+.footerSvgRow {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.privatePolicy {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    gap: 5px;
+    text-align: right;
+}
+
+.privatePolicyText {
+    color: #E4E5EA;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+}
+
+@media (max-width: 360px) {
+    .footerContainer {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #0E1014;
+        padding: 45px 0 60px 15px;
+        gap: 30px;
+    }
+
+    .blockFooterTitle {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    .blockFooterContent {
+        gap: 40px;
+    }
+
+    .blockFooterContentText {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .blockFooterContacts {
+        text-align: start;
+    }
+    .footerSvgRow {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .footerNumberPhone {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .footerSvgRowItem {
+        width: 24px;
+        height: 24px;
+    }
+    .footerAddress {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .privatePolicy {
+         display: flex;
+         align-items: flex-start;
+     }
+
+    .privatePolicyText {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #E4E5EA;
+    }
+}
+

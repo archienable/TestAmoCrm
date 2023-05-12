@@ -1,38 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-Black"),
+    /* Если не получилось, загрузит woff2 */
+  url("./accets/fonts/InterBlack/Inter-Black.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+  url("./accets/fonts/InterBlack/Inter-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-ExtraBold"),
+    /* Если не получилось, загрузит woff2 */
+  url("./accets/fonts/InterExtraBold/Inter-ExtraBold.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+  url("./accets/fonts/InterExtraBold/Inter-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-Bold"),
+    /* Если не получилось, загрузит woff2 */
+  url("./accets/fonts/InterBold/Inter-Bold.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+  url("./accets/fonts/InterBold/Inter-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-SemiBold"),
+    /* Если не получилось, загрузит woff2 */
+  url("./accets/fonts/InterSemiBold/Inter-SemiBold.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+  url("./accets/fonts/InterSemiBold/Inter-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-Medium"),
+    /* Если не получилось, загрузит woff2 */
+  url("./accets/fonts/InterMedium/Inter-Medium.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+  url("./accets/fonts/InterMedium/Inter-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Inter-Regular"),
+    /* Если не получилось, загрузит woff2 */
+  url("./accets/fonts/InterRegular/Inter-Regular.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+  url("./accets/fonts/InterRegular/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Montserrat-Regular"),
+    /* Если не получилось, загрузит woff2 */
+  url("./accets/fonts/Monserat/Montserrat-Regular.woff2") format("woff2"),
+    /* Если браузер не поддерживает woff2, загрузит woff */
+  url("./accets/fonts/Monserat/Montserrat-Regular.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  background-color: #1E1E1E;
+  font-family: Inter, sans-serif;
+}
+
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.redLight {
+  position: absolute;
+  width: 311px;
+  height: 311px;
+  left: -102px;
+  top: 251px;
+  background: #961A1A;
+  opacity: 0.5;
+  filter: blur(196px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.redBall {
+  position: absolute;
+  left: 590px;
+  top: 83px;
+  backdrop-filter: blur(2px);
+}
+
+.purpleBall {
+  position: absolute;
+  left: 950px;
+  top: -2px;
+}
+
+.purpleLight {
+  position: absolute;
+  width: 259px;
+  height: 259px;
+  left: 700px;
+  top: -154px;
+  background: #833AB4;
+  opacity: 0.5;
+  filter: blur(196px);
+  z-index: 1;
+}
+
+.redBallTwo {
+  position: absolute;
+  left: 950px;
+  top: 600px;
+}
+
+@media (max-width: 400px) {
+  .redLight {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .redBall {
+    display: none;
+  }
+  .purpleBall {
+    display: none;
+  }
+  .purpleLight {
+    display: none;
+  }
+  .redBallTwo {
+    display: none;
+  }
+}
+
+@media (min-width: 400px) {
+  .purpleBallMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    /*overflow-y: hidden; */
+    overflow-x: hidden;
+  }
+
+  .purpleLight {
+    display: flex;
+    width: 200px;
+    height: 259px;
+    left: 130px;
+    top: 150px;
+    background: #833AB4;
+    opacity: 0.5;
+    filter: blur(196px);
+  }
+
+  .purpleBallMobile {
+    position: absolute;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    left: 300px;
+    top: 300px;
+  }
+  .redBall {
+    display: flex;
+    width: 70px;
+    height: 50px;
+    left: 30px;
+    top: 470px;
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    filter: blur(7px);
+  }
+
+  .redLight {
+    display: flex;
+    width: 211px;
+    height: 210px;
+    left: 20px;
+    top: 310px;
   }
 }

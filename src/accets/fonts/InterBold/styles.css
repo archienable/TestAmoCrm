@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Inter-Bold';
+  src: url(./Inter-Bold.ttf) format('truetype'),
+       url(./Inter-Bold.woff2) format('woff2'),
+       url(./Inter-Bold.woff) format('woff');
+}
